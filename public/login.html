@@ -1,0 +1,32 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="লগইন বা রেজিস্টার — রুসুখ অনলাইন একাডেমি">
+  <title>লগইন — রুসুখ অনলাইন একাডেমি</title><link rel="stylesheet" href="/css/style.css"></head><body>
+  <nav class="navbar" id="navbar"><div class="nav-content"><a href="/" class="nav-logo"><div class="nav-logo-icon">📖</div><div class="nav-logo-text">রুসুখ অনলাইন <span>একাডেমি</span></div></a>
+    <div class="nav-links" id="navLinks"><a href="/">হোম</a><a href="/courses.html">কোর্সসমূহ</a><a href="/books.html">বইসমূহ</a><a href="/contact.html">যোগাযোগ</a></div>
+    <div class="nav-actions" id="navActions"><a href="/cart.html" class="nav-cart">🛒<span class="cart-badge" id="cartBadge">0</span></a></div>
+    <button class="nav-toggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button></div></nav>
+  <section class="section" style="padding-top:calc(var(--nav-height) + 60px);min-height:80vh;display:flex;align-items:center;">
+    <div class="container">
+      <div class="form-card" id="loginForm">
+        <h2>🔑 লগইন করুন</h2><p class="form-subtitle">আপনার অ্যাকাউন্টে প্রবেশ করুন</p>
+        <form onsubmit="handleLogin(event)">
+          <div class="form-group"><label>ইমেইল</label><input id="loginEmail" type="email" required placeholder="আপনার ইমেইল"></div>
+          <div class="form-group"><label>পাসওয়ার্ড</label><input id="loginPassword" type="password" required placeholder="আপনার পাসওয়ার্ড"></div>
+          <button type="submit" id="loginBtn" class="btn btn-primary btn-lg" style="width:100%;">লগইন →</button>
+        </form>
+        <div class="form-toggle">অ্যাকাউন্ট নেই? <a href="#" onclick="toggleForm('register')">রেজিস্টার করুন</a></div>
+      </div>
+      <div class="form-card" id="registerForm" style="display:none;">
+        <h2>📝 রেজিস্টার করুন</h2><p class="form-subtitle">নতুন অ্যাকাউন্ট তৈরি করুন</p>
+        <form onsubmit="handleRegister(event)">
+          <div class="form-group"><label>পূর্ণ নাম</label><input id="regName" type="text" required placeholder="আপনার নাম"></div>
+          <div class="form-group"><label>ইমেইল</label><input id="regEmail" type="email" required placeholder="আপনার ইমেইল"></div>
+          <div class="form-group"><label>পাসওয়ার্ড</label><input id="regPassword" type="password" required minlength="6" placeholder="কমপক্ষে ৬ অক্ষর"></div>
+          <button type="submit" id="regBtn" class="btn btn-primary btn-lg" style="width:100%;">রেজিস্টার করুন →</button>
+        </form>
+        <div class="form-toggle">অ্যাকাউন্ট আছে? <a href="#" onclick="toggleForm('login')">লগইন করুন</a></div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer"><div class="container"><div class="footer-bottom">© ২০২৬ রুসুখ অনলাইন একাডেমি। সর্বস্বত্ব সংরক্ষিত।</div></div></footer>
+  <div class="toast" id="toast"></div><script src="/js/app.js"></script><script src="/js/login.js"></script></body></html>

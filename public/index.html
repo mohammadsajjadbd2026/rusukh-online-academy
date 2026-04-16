@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="রুসুখ অনলাইন একাডেমি — ইসলামী শিক্ষার জন্য বই ও কোর্স। কুরআন, হাদীস, ফিক্বহ, আরবী ভাষা শিখুন।">
+  <title>রুসুখ অনলাইন একাডেমি — ইসলামী শিক্ষা প্ল্যাটফর্ম</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <div class="nav-content">
+      <a href="/" class="nav-logo">
+        <div class="nav-logo-icon">📖</div>
+        <div class="nav-logo-text">রুসুখ অনলাইন <span>একাডেমি</span></div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="/" class="active">হোম</a>
+        <a href="/courses.html">কোর্সসমূহ</a>
+        <a href="/books.html">বইসমূহ</a>
+        <a href="/contact.html">যোগাযোগ</a>
+      </div>
+      <div class="nav-actions" id="navActions">
+        <a href="/cart.html" class="nav-cart" title="কার্ট">🛒<span class="cart-badge" id="cartBadge">0</span></a>
+        <div id="authButtons"><a href="/login.html" class="btn-nav btn-nav-primary">লগইন</a></div>
+        <div id="userMenu" style="display:none;align-items:center;gap:12px;"><span class="nav-user-name" id="userName"></span><button class="btn-nav btn-nav-outline" onclick="logout()">লগআউট</button></div>
+      </div>
+      <button class="nav-toggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-text">
+          <div class="hero-tag">🌙 বাংলাদেশের শীর্ষ ইসলামী শিক্ষা প্ল্যাটফর্ম</div>
+          <h1 class="hero-title">ইসলামী জ্ঞানের আলোয় <span class="highlight">আলোকিত হোন</span></h1>
+          <p class="hero-desc">রুসুখ অনলাইন একাডেমিতে স্বাগতম। কুরআন, হাদীস, ফিক্বহ ও আরবী ভাষার উপর মানসম্মত কোর্স এবং বই সংগ্রহ করুন। অভিজ্ঞ আলেমদের তত্ত্বাবধানে ঘরে বসে শিখুন।</p>
+          <div class="hero-btns">
+            <a href="/courses.html" class="btn btn-primary btn-lg">কোর্স দেখুন 🎓</a>
+            <a href="/books.html" class="btn btn-secondary btn-lg">বই ব্রাউজ করুন 📚</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="hero-card">
+            <div class="hero-card-icon">🕌</div>
+            <h3>জ্ঞানের দ্বার উন্মুক্ত</h3>
+            <p>সহীহ ইসলামী জ্ঞান শিখুন অভিজ্ঞ আলেমদের কাছ থেকে</p>
+            <div class="hero-stats">
+              <div><div class="hero-stat-num">6+</div><div class="hero-stat-label">কোর্স</div></div>
+              <div><div class="hero-stat-num">6+</div><div class="hero-stat-label">বই</div></div>
+              <div><div class="hero-stat-num">1K+</div><div class="hero-stat-label">শিক্ষার্থী</div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">⭐ কেন আমাদের বেছে নেবেন</div>
+        <h2 class="section-title">আমাদের বৈশিষ্ট্যসমূহ</h2>
+        <p class="section-desc">আমরা সহীহ ইসলামী জ্ঞান সুলভ মূল্যে আপনার কাছে পৌঁছে দিচ্ছি</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon">🎓</div><h3>অভিজ্ঞ শিক্ষক</h3><p>দেশ-বিদেশের বিশিষ্ট আলেম ও শিক্ষকদের তত্ত্বাবধানে পাঠদান</p></div>
+        <div class="feature-card"><div class="feature-icon">📱</div><h3>যেকোনো ডিভাইসে</h3><p>মোবাইল, ট্যাবলেট বা কম্পিউটার — যেকোনো ডিভাইসে শিখুন</p></div>
+        <div class="feature-card"><div class="feature-icon">💰</div><h3>সাশ্রয়ী মূল্য</h3><p>সকলের জন্য সহজলভ্য মূল্যে মানসম্মত কোর্স ও বই</p></div>
+        <div class="feature-card"><div class="feature-icon">🔒</div><h3>নিরাপদ পেমেন্ট</h3><p>বিকাশ, নগদ, রকেট ও ক্যাশ অন ডেলিভারি সুবিধা</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border);">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">🎓 জনপ্রিয় কোর্স</div>
+        <h2 class="section-title">আমাদের কোর্সসমূহ</h2>
+        <p class="section-desc">অভিজ্ঞ আলেম ও শিক্ষকদের পরিচালনায় মানসম্মত কোর্স</p>
+      </div>
+      <div class="product-grid" id="featuredCourses"><div class="spinner"></div></div>
+      <div style="text-align:center;margin-top:32px;"><a href="/courses.html" class="btn btn-secondary">সব কোর্স দেখুন →</a></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <div class="section-tag">📚 জনপ্রিয় বই</div>
+        <h2 class="section-title">আমাদের বইসমূহ</h2>
+        <p class="section-desc">ইসলামী জ্ঞানের বিভিন্ন শাখায় নির্বাচিত বই সংগ্রহ</p>
+      </div>
+      <div class="product-grid" id="featuredBooks"><div class="spinner"></div></div>
+      <div style="text-align:center;margin-top:32px;"><a href="/books.html" class="btn btn-secondary">সব বই দেখুন →</a></div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo" style="margin-bottom:4px;">
+            <div class="nav-logo-icon">📖</div><div class="nav-logo-text">রুসুখ অনলাইন <span>একাডেমি</span></div>
+          </div>
+          <p>ইসলামী শিক্ষার জন্য বাংলাদেশের সেরা অনলাইন প্ল্যাটফর্ম। সহীহ জ্ঞান অর্জনের নির্ভরযোগ্য প্রতিষ্ঠান।</p>
+        </div>
+        <div><h4>দ্রুত লিংক</h4><div class="footer-links"><a href="/">হোম</a><a href="/courses.html">কোর্সসমূহ</a><a href="/books.html">বইসমূহ</a><a href="/contact.html">যোগাযোগ</a></div></div>
+        <div><h4>বিষয়সমূহ</h4><div class="footer-links"><a href="#">কুরআন</a><a href="#">হাদীস</a><a href="#">ফিক্বহ</a><a href="#">আরবী ভাষা</a></div></div>
+        <div><h4>যোগাযোগ</h4><div class="footer-links"><a href="#">📧 info@rusukh.com</a><a href="#">📞 +৮৮০ ১৭XX-XXXXXX</a><a href="#">📍 ঢাকা, বাংলাদেশ</a></div></div>
+      </div>
+      <div class="footer-bottom">© ২০২৬ রুসুখ অনলাইন একাডেমি। সর্বস্বত্ব সংরক্ষিত।</div>
+    </div>
+  </footer>
+  <div class="toast" id="toast"></div>
+  <script src="/js/app.js"></script>
+  <script src="/js/home.js"></script>
+</body>
+</html>

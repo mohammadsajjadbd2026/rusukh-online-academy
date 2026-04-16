@@ -1,0 +1,15 @@
+<!DOCTYPE html><html lang="bn"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="রুসুখ অনলাইন একাডেমির কোর্সসমূহ — কুরআন, হাদীস, ফিক্বহ, আরবী ভাষা কোর্স">
+  <title>কোর্সসমূহ — রুসুখ অনলাইন একাডেমি</title><link rel="stylesheet" href="/css/style.css"></head><body>
+  <nav class="navbar" id="navbar"><div class="nav-content"><a href="/" class="nav-logo"><div class="nav-logo-icon">📖</div><div class="nav-logo-text">রুসুখ অনলাইন <span>একাডেমি</span></div></a>
+    <div class="nav-links" id="navLinks"><a href="/">হোম</a><a href="/courses.html" class="active">কোর্সসমূহ</a><a href="/books.html">বইসমূহ</a><a href="/contact.html">যোগাযোগ</a></div>
+    <div class="nav-actions" id="navActions"><a href="/cart.html" class="nav-cart">🛒<span class="cart-badge" id="cartBadge">0</span></a><div id="authButtons"><a href="/login.html" class="btn-nav btn-nav-primary">লগইন</a></div><div id="userMenu" style="display:none;align-items:center;gap:12px;"><span class="nav-user-name" id="userName"></span><button class="btn-nav btn-nav-outline" onclick="logout()">লগআউট</button></div></div>
+    <button class="nav-toggle" onclick="toggleMobileMenu()"><span></span><span></span><span></span></button></div></nav>
+  <div class="page-header"><div class="container"><h1>📚 কোর্সসমূহ</h1><p>আমাদের সকল ইসলামী কোর্স ব্রাউজ করুন ও ভর্তি হন</p></div></div>
+  <section class="section"><div class="container">
+    <div class="filter-bar"><button class="filter-btn active" onclick="filterCourses('')">সব</button><button class="filter-btn" onclick="filterCourses('কুরআন')">কুরআন</button><button class="filter-btn" onclick="filterCourses('আক্বীদাহ')">আক্বীদাহ</button><button class="filter-btn" onclick="filterCourses('ভাষা')">আরবী</button><button class="filter-btn" onclick="filterCourses('ফিক্বহ')">ফিক্বহ</button><button class="filter-btn" onclick="filterCourses('হাদীস')">হাদীস</button>
+      <div class="search-box"><input type="text" id="courseSearch" placeholder="কোর্স খুঁজুন..." oninput="searchCourses(this.value)"></div></div>
+    <div class="product-grid" id="courseGrid"><div class="spinner"></div></div>
+  </div></section>
+  <footer class="footer"><div class="container"><div class="footer-bottom">© ২০২৬ রুসুখ অনলাইন একাডেমি। সর্বস্বত্ব সংরক্ষিত।</div></div></footer>
+  <div class="toast" id="toast"></div><script src="/js/app.js"></script><script src="/js/courses.js"></script></body></html>
